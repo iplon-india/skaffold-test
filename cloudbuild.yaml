@@ -1,7 +1,7 @@
 steps:
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: gcloud
-  args: [ "deploy", "release", "create" , "grafana-pm-${SHORT_SHA}", "--delivery-pipeline","grafana-pm", "--region", "us-west2"]
+  args: [ "deploy", "releases", "create" , "grafana-pm-${SHORT_SHA}", "--delivery-pipeline","grafana-pm", "--region", "us-west2"]
 
 options:
   logging: CLOUD_LOGGING_ONLY
