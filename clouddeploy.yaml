@@ -16,7 +16,6 @@ serialPipeline:
 # description: A Dev Cluster
 # gke:
 #   cluster: projects/a-project/locations/us-west1-a/clusters/cluster-dev
-
 # ---
 apiVersion: deploy.cloud.google.com/v1beta1
 kind: Target
