@@ -6,7 +6,6 @@ steps:
   
   args: [ "deploy", "releases", "create" , "${_release_name}-${SHORT_SHA}", "--delivery-pipeline","grafana-pm", "--region", "us-west2"]
 
-substitutions:
-  _release_name: 'grafana-pm'
+
 options:
   logging: CLOUD_LOGGING_ONLY
