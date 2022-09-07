@@ -3,7 +3,7 @@ steps:
   entrypoint: gcloud
   env:
   - 'release_name=grafana-pm'
-  args: [ "deploy", "releases", "create" , "$release_name-${SHORT_SHA}", "--delivery-pipeline","grafana-pm", "--region", "us-west2"]
+  args: [ "deploy", "releases", "create" , "${release_name}-${SHORT_SHA}", "--delivery-pipeline","grafana-pm", "--region", "us-west2"]
 
 options:
   logging: CLOUD_LOGGING_ONLY
