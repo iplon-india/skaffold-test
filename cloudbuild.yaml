@@ -1,7 +1,6 @@
 steps:
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: gcloud
-  
   args: [ "deploy", "releases", "create" , "${_RELEASE_NAME}-${SHORT_SHA}", "--delivery-pipeline","grafana-pm", "--region", "us-west2"]
 substitutions:
   _RELEASE_NAME: grafana-pm
